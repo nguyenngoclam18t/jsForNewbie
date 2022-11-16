@@ -26,33 +26,27 @@ function removeToDoList() {
   };
 }
 function editToDoList(todoList) {
-  var clickCounter = 0;
   var listUi = document.querySelector(".todo-list");
   listUi = listUi.querySelectorAll("li");
   var elementchange = listUi[listUi.length - 1];
   var editLi = elementchange.querySelector(".btn.btn-warning");
   editLi.onclick = (event) => {
-    clickCounter++;
-    console.log(clickCounter);
-    if (clickCounter % 2 != 0) {
-      //lấy ra đoạn text để lên form
-      var textChange = elementchange.querySelector(".todo__title_mb-0");
-      //lấy form
-      var formElement = document.querySelector("form");
-      //thay đổi text ở form
-      formElement.querySelector(".form-control").value = textChange.textContent;
-      formElement.onsubmit = (event) => {
-        event.preventDefault();
-        //lấy data
-        var data1 = formElement.querySelector(".form-control").value;
-        //gán data
-        if (!data1) return;
-        elementchange.querySelector(".todo__title_mb-0").textContent = data1;
-        formElement.querySelector(".form-control").value = "";
-      };
-    } else {
+    //lấy ra đoạn text để lên form
+    var textChange = elementchange.querySelector(".todo__title_mb-0");
+    //lấy form
+    var formElement = document.querySelector("form");
+    //thay đổi text ở form
+    formElement.querySelector(".form-control").value = textChange.textContent;
+    formElement.onsubmit = (event) => {
+      event.preventDefault();
+      //lấy data
+      var data1 = formElement.querySelector(".form-control").value;
+      //gán data
+      if (!data1) return;
+      elementchange.querySelector(".todo__title_mb-0").textContent = data1;
+      formElement.querySelector(".form-control").value = "";
       addElementByForm(todoList);
-    }
+    };
   };
 }
 
