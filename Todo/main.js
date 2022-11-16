@@ -74,6 +74,7 @@ function addElementLi(element) {
 function renderTodoList(todoList) {
   if (!Array.isArray(todoList) || todoList.length < 0) return;
   // logic here
+
   for (var index in todoList) {
     addElementLi(todoList[index].name);
     completeToDoList();
@@ -82,7 +83,23 @@ function renderTodoList(todoList) {
   }
   addElementByForm(todoList);
 }
-
+function searchTodo(todoList, titel) {
+  return todoList.filter((todo) => {
+    if (todo.name.toLowerCase().includes(titel)) return todo;
+  });
+}
+function formSearch(todoList) {
+  var ulElement = document.querySelector(".todo-list");
+  var searchTitle = document.getElementById("search_todo");
+  if (searchTitle) {
+    searchTitle.addEventListener("input", (e) => {
+      ulElement.textContent = "";
+      var titel = e.target.value;
+      var newTodoList = searchTodo(todoList, titel.toLowerCase());
+      renderTodoList(newTodoList);
+    });
+  }
+}
 // Shouldn't use global variable
 function main() {
   const todoList = [
@@ -103,6 +120,7 @@ function main() {
     },
   ];
   renderTodoList(todoList);
+  formSearch(todoList);
 }
 
 main();
