@@ -1,0 +1,62 @@
+@media (max-width: 740px) {
+  #header {
+    overflow: hidden;
+  }
+  #header .search_btn {
+    display: none;
+  }
+  #header .mobile-menu-btn {
+    display: block;
+  }
+  #nav {
+    display: block;
+  }
+  #nav li:first-child {
+    display: inline-block;
+  }
+  #nav li {
+    display: block;
+  }
+
+  #nav .subNav {
+    position: initial;
+    background-color: #333;
+    padding: 0 24px;
+  }
+  #nav .subNav a {
+    color: #fff;
+  }
+  #nav .subNav li {
+    position: initial;
+  }
+  #content .band-member {
+    display: block;
+  }
+  .band-member > .member {
+    text-align: center;
+  }
+  .tour-places {
+    display: block;
+  }
+  .tour-places .place {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    width: 120%;
+    margin-left: -3px;
+    margin-right: -30;
+  }
+  .form-message {
+    width: 117%;
+  }
+  .form-contact .form-2 {
+    margin-top: 10px;
+    margin-left: -19px;
+  }
+  .submit-form {
+    margin-right: -20px;
+  }
+  .contact-about {
+    margin-bottom: 150px;
+  }
+}
