@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn DOM</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    </div>
+    <section class="my-4">
+      <div class="container">
+        <form class="todoForm">
+          <div class="mb-3">
+            <label for="todoText" class="form-label"
+              >What are you going todo?</label
+            >
+            <input type="text" class="form-control" id="todoText" />
+          </div>
+
+          <button type="submit" class="btnbtn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="my-4">
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Search Todo By Title</label
+          >
+          <input
+            type="text"
+            class="form-control searchToDo"
+            id="search_todo"
+            placeholder="Ex: Learn"
+          />
+      </div>
+    </section>
+
+    <section class="my-4">
+      <div class="container">
+        <h6>Filter By</h6>
+        <button class="all-button btn btn-primary mb-3">All</button>      
+        <button class="finish-button btn btn-warning mb-3">Finish</button>      
+        <button class="un-finish-button btn btn-danger mb-3">UnFinish</button>      
+      </div>    
+    </section>
+
+    <section class="my-4">
+      <div class="container">
+        <h1>Todo List</h1>
+
+        <ul class="todo-list"></ul>
+      </div>
+    </section>
+
+    <!-- TEMPLATE: use "content" -->
+    <template id="todoTemplate">
+      <li>
+        <div class="todo alert alert-secondary" role="alert">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="todo__title_mb-0">TODO TITLE</p>
+
+            <div class="todo__actions">
+              <button type="button" class="btn btn-success mark-as-done">
+                Finish
+              </button>
+
+              <button type="button" class="btn btn-danger remove">
+                Remove
+              </button>
+
+              <button type="button" class="btn btn-warning">Edit</button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <script src="main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main2.js"></script>
+  </body>
+</html>
