@@ -7,3 +7,5 @@
 3.clock: https://nguyenngoclam18t.github.io/jsForNewbie/Clock
 
 3.the band: https://nguyenngoclam18t.github.io/jsForNewbie/TheBand
+
+4.BR Architects: https://nguyenngoclam18t.github.io/jsForNewbie/Architects
