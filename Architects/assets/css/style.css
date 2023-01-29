@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#head-content {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+#head-content ul {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+.bar-item > li {
+  display: inline-block;
+}
+.bar-item li:hover {
+  background-color: #ccc;
+}
+.bar-item a {
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #000;
+  font-size: 19px;
+}
+.bar-item :not(:first-child) {
+  float: right;
+}
+.web-padding {
+  padding: 8px 16px;
+}
+.img-header {
+  position: relative;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  background: url("../img/architect.jpg") top center/cover no-repeat;
+}
+.text-img {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.text-img .BR-text {
+  background-color: #000;
+  padding-top: 10px;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+.text-img .description {
+  letter-spacing: 8px;
+  font-weight: 200;
+}
+.container {
+  padding: 32px 16px;
+}
+.padding-titel {
+  padding: 16px 0;
+  margin: 10px 0;
+  border-bottom: 1px #ccc solid;
+  font-size: 24px;
+}
+.row-4 {
+  width: 25%;
+  height: 25%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.about-house {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+}
+.row-4 img {
+  height: 100%;
+  width: 100%;
+}
+.img-member {
+  filter: grayscale(80%);
+}
+.row {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.about-content .about-description {
+  line-height: 1.3;
+}
+.contact-member {
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+}
+.btn-hover:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.row-4 .name {
+  font-size: 24px;
+}
+.margin-10 {
+  margin: 10px 0;
+}
+
+.margin-15 {
+  margin: 15px 0;
+}
+.contact-input-form {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 16px 0;
+  border: 1px #ccc solid;
+  opacity: 0.8;
+}
+.btn-submit {
+  margin: 16px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.btn-submit:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.map-content {
+  background: url(../img/map.jpg) top center/cover no-repeat;
+  padding-top: 50%;
+}
+#footer-content {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
