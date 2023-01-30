@@ -107,7 +107,7 @@ body {
 .card__img,
 .card__titel,
 .card__price {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .card:hover .card__img {
   transform: translateY(-90px) rotate(-20deg);
