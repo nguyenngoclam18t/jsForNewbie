@@ -9,3 +9,5 @@
 3.the band: https://nguyenngoclam18t.github.io/jsForNewbie/TheBand
 
 4.BR Architects: https://nguyenngoclam18t.github.io/jsForNewbie/Architects
+
+5.Product Card: https://nguyenngoclam18t.github.io/jsForNewbie/Product-Card
